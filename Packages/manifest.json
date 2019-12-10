@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.e7.notch-solution": "https://github.com/5argon/NotchSolution.git",
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.device-simulator": "2.0.0-preview",
     "com.unity.dots.editor": "0.1.0-preview.2",
@@ -44,5 +45,11 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
+  },
+  "lock": {
+    "com.e7.notch-solution": {
+      "revision": "HEAD",
+      "hash": "fb637e215f35a61886426ca083c8ea802567dd99"
+    }
   }
 }
