@@ -8,14 +8,16 @@ using Unity.Physics;
 using Unity.Collections;
 using Unity.Mathematics;
 
+
 public class JumpSystem2 : JobComponentSystem
 {
-    
+
     protected override JobHandle OnUpdate(JobHandle inputDeps)
     {
         bool jumpPressed = Input.GetKeyDown(KeyCode.Space);
 
-        return  Entities.ForEach((ref JumpComponent jump, ref PhysicsVelocity vel) =>
+        return  Entities.WithAll<PlayerTag>().WithBurst(FloatMode.Default, FloatPrecision.Standard, true)
+        .ForEach((ref JumpComponent jump, ref PhysicsVelocity vel) =>
         {
             if(jumpPressed)
             {

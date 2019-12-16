@@ -14,6 +14,19 @@
                     "<DeviceIndex>k__BackingField": 0
                 }
             ]
+        },
+        {
+            "buildTarget": 2,
+            "configurations": [
+                {
+                    "configurationName": "Config A",
+                    "<DeviceIndex>k__BackingField": 0
+                },
+                {
+                    "configurationName": "Config B",
+                    "<DeviceIndex>k__BackingField": 0
+                }
+            ]
         }
     ],
     "<EnableSimulation>k__BackingField": false,

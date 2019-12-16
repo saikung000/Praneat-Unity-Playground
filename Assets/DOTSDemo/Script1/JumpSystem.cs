@@ -5,12 +5,11 @@ using Unity.Collections;
 using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
-
+using UnityEngine;
 
 public class JumpSystem : JobComponentSystem
 {
-
-
+    [BurstCompile]
     struct JumpJob : IJobForEach<JumpComponent,PhysicsVelocity>
     {
         public bool jumpPressed;
@@ -29,7 +28,7 @@ public class JumpSystem : JobComponentSystem
     
         var job = new JumpJob()
         {
-            jumpPressed  = Input.GetKeyDown(KeyCode.Space)
+            jumpPressed = Input.GetKeyDown(KeyCode.Space)
         };
 
         return job.Schedule(this, inputDependencies);
