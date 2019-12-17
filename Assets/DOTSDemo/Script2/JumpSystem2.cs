@@ -16,8 +16,10 @@ public class JumpSystem2 : JobComponentSystem
     {
         bool jumpPressed = Input.GetKeyDown(KeyCode.Space);
 
-        return  Entities.WithAll<PlayerTag>().WithBurst(FloatMode.Default, FloatPrecision.Standard, true)
-        .ForEach((ref JumpComponent jump, ref PhysicsVelocity vel) =>
+        return  Entities
+        //.WithAll<PlayerTag>()
+        .WithBurst(FloatMode.Default, FloatPrecision.Standard, true)
+        .ForEach((ref JumpComponent2 jump, ref PhysicsVelocity vel) =>
         {
             if(jumpPressed)
             {
