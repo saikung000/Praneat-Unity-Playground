@@ -935,6 +935,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1593500866}
   - component: {fileID: 1593500865}
+  - component: {fileID: 1593500867}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -949,7 +950,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593500864}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd75bd6d7bde14002b8819f472751ed6, type: 3}
   m_Name: 
@@ -969,6 +970,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1593500867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593500864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d4a7080eb2445779fb657bed305cfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 5833895232218765522, guid: 24e59a04631dd48df8afe2acc04f318d,
+    type: 3}
+  spawnerValue: 10
 --- !u!1 &1846544275
 GameObject:
   m_ObjectHideFlags: 0

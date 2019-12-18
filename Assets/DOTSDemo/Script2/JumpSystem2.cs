@@ -15,7 +15,6 @@ public class JumpSystem2 : JobComponentSystem
     protected override JobHandle OnUpdate(JobHandle inputDeps)
     {
         bool jumpPressed = Input.GetKeyDown(KeyCode.Space);
-
         return  Entities
         //.WithAll<PlayerTag>()
         .WithBurst(FloatMode.Default, FloatPrecision.Standard, true)
